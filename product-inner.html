@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Blessed Manifest</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg py-2">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="The Blessed Manifest Logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active" aria-current="page" href="#">Bible</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="icon-group d-flex">
+                        <a href="#" class="icon-circle" aria-label="Search">
+                            <i class="bi bi-search"></i>
+                        </a>
+                        <a href="#" class="icon-circle" aria-label="User account">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <a href="#" class="icon-circle" aria-label="Shopping cart">
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent p-0 mb-0 fs-5">
+                        <li class="breadcrumb-item"><a href="#">Products</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Mugs</li>
+                    </ol>
+                </nav>
+                <div class="share-icon d-flex align-items-center gap-1">
+                    <i class="bi bi-share"></i> <span class="fs-6 fw-light">Share</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-4">
+            <div class="row g-5">
+                <!-- LEFT COL: images (mockup) -->
+                <div class="col-md-6">
+                    <div class="product-img-large position-relative">
+                        <img src="images/product-1.png" alt="White Glossy Mug" class="img-square">
+                        <button class="btn position-absolute top-0 end-0 m-3 p-2 rounded-circle bg-white border-0 shadow-sm" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;" aria-label="Add to wishlist">
+                            <i class="bi bi-heart fs-5" style="color: #3D204E;"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex gap-3 mt-3">
+                        <img src="images/product-1.png" alt="thumb" class="thumb-img active">
+                        <img src="images/product-2.png" alt="thumb" class="thumb-img">
+                        <img src="images/product-3.png" alt="thumb" class="thumb-img">
+                    </div>
+                </div>
+
+                <!-- RIGHT COL: all product details exactly as image specification -->
+                <div class="col-md-6">
+                    <h1 class="display-5 fw-bold" style="color: #3D204E;">White Glossy Mug</h1>
+                    
+                    <!-- descriptive text (exact copy from PNG, with line breaks for readability) -->
+                    <p class="mt-3" style="font-size: 1.2rem; line-height: 1.4;">
+                        Enjoy your favorite tea or coffee by the fire with the 14 oz. Rover <br>
+                        Stainless Steel Insulated Camper Mug! Its durable, double-wall vacuum <br>
+                        construction keeps your beverage hot for 5 hours or cold for 15 hours.
+                    </p>
+
+                    <!-- COLOR (only white) -->
+                    <div class="mt-4">
+                        <span class="fw-semibold fs-6">Color</span>
+                        <div class="mt-2">
+                            <span class="size-badge active" style="background:#fff; border:2px solid #3D204E; color:#3D204E; font-weight:500;">White</span>
+                        </div>
+                    </div>
+
+                    <!-- SIZE options -->
+                    <div class="mt-4">
+                        <span class="fw-semibold fs-6">Size</span>
+                        <div class="d-flex flex-wrap gap-2 mt-2">
+                            <span class="size-badge">11 oz</span>
+                            <span class="size-badge active">14 oz</span>
+                            <span class="size-badge">20 oz</span>
+                        </div>
+                    </div>
+
+                    <!-- PRICE * & ESTIMATED DELIVERY + SHIPPING (combined row as in PNG) -->
+                    <div class="mt-4 d-flex flex-wrap align-items-center gap-3">
+                        <!-- price block -->
+                        <div>
+                            <span class="text-secondary small">Price*</span>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="fw-bold fs-2" style="color: #3D204E;">$7.95</span>
+                                <span class="text-secondary small fw-light">Print included</span>
+                            </div>
+                        </div>
+                        <!-- vertical divider (dot) as per minimal design -->
+                        <span class="dot-separator mx-2" style="width:6px; height:6px; background:#3D204E; border-radius:50%; display:inline-block;"></span>
+                        <!-- estimated delivery to US -->
+                        <div>
+                            <span class="fw-medium">Estimated Delivery To:</span>
+                            <span class="fw-bold">United States</span>
+                            <span class="fw-semibold ms-1">Feb 3–7</span>
+                        </div>
+                        <span class="dot-separator mx-2" style="width:6px; height:6px; background:#3D204E; border-radius:50%; display:inline-block;"></span>
+                        <!-- shipping starts at -->
+                        <div>
+                            <span class="text-secondary">Shipping Starts At</span>
+                            <span class="fw-semibold">$12.99</span>
+                        </div>
+                    </div>
+
+                    <!-- START DESIGNING button -->
+                    <div class="d-flex align-items-center justify-content-center gap-3 my-4">
+                        <a href="#products" class="btn px-5 py-3 rounded-pill text-white fs-5 w-100" style="background: #3D204E;">Start Designing</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ACCORDION SECTION - REVISED WITH TRANSPARENT STYLING AND PURPLE BOTTOM BORDER -->
+            <div class="row g-4 mt-2">
+                <div class="col-lg-12 mb-4">
+                    <div class="accordion transparent-accordion" id="accordionExample">
+                        <!-- Accordion Item 1 -->
+                        <div class="accordion-item border-0 border-bottom" style="border-color: #3D204E !important; background: transparent;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background: transparent; box-shadow: none; border: none; color: #3D204E;">
+                                    <span class="me-2">Product Description</span>
+                                    <span class="accordion-icon ms-auto">
+                                        <i class="bi bi-plus fs-5"></i>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body px-0 py-3" style="background: transparent;">
+                                    This sturdy mug is perfect for your morning coffee, afternoon tea, or whatever hot beverage you enjoy. It's glossy white and yields vivid prints that retain their quality when dish-washed and microwaved. Add a graphic of your choice and add this best-seller to your store, so others can enjoy your magical designs too!.Disclaimer: The White Glossy Mug may vary slightly in size by up to +/- 0.1″ (2 mm) due to the nature of the production process. These variations are normal and won’t affect your mug’s quality or functionality. This product is made on demand. No minimums.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Accordion Item 2 -->
+                        <div class="accordion-item border-0 border-bottom" style="border-color: #3D204E !important; background: transparent;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background: transparent; box-shadow: none; border: none; color: #3D204E;">
+                                    <span class="me-2">Product Details</span>
+                                    <span class="accordion-icon ms-auto">
+                                        <i class="bi bi-plus fs-5"></i>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body px-0 py-3" style="background: transparent;">
+                                    After selecting your product, you'll be taken to our customization page where you can upload your design files. Simply click the "Upload Design" button, select your file from your computer, and position it on the product preview. We accept JPG, PNG, and PDF files up to 20MB.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Accordion Item 3 -->
+                        <div class="accordion-item border-0 border-bottom" style="border-color: #3D204E !important; background: transparent;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background: transparent; box-shadow: none; border: none; color: #3D204E;">
+                                    <span class="me-2">Delivery Options</span>
+                                    <span class="accordion-icon ms-auto">
+                                        <i class="bi bi-plus fs-5"></i>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body px-0 py-3" style="background: transparent;">
+                                    For best results, we recommend high-resolution files (300 DPI) in JPG, PNG, or PDF format. Your design should be at least 1000 x 1000 pixels. For text-only designs, we offer various fonts you can choose from without needing to upload a file.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram-products py-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <h2 class="display-6 fw-bold mb-4" style="color: #3D204E;">Check Out Our Products On Instagram</h2>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-5">
+                    <div class="col-6 col-md-3">
+                        <div class="position-relative overflow-hidden rounded-4 shadow-sm hover-effect" style="aspect-ratio: 1/1;">
+                            <img src="images/instagram-product-1.png" alt="Product 1" class="w-100 h-100 object-fit-cover">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 overlay" style="background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%);"></div>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <i class="bi bi-instagram text-white fs-2 p-3 rounded-circle d-inline-flex align-items-center justify-content-center" style="background-color: rgba(0,0,0,0.5); width: 60px; height: 60px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="position-relative overflow-hidden rounded-4 shadow-sm hover-effect" style="aspect-ratio: 1/1;">
+                            <img src="images/instagram-product-2.png" alt="Product 2" class="w-100 h-100 object-fit-cover">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 overlay" style="background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%);"></div>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <i class="bi bi-instagram text-white fs-2 p-3 rounded-circle d-inline-flex align-items-center justify-content-center" style="background-color: rgba(0,0,0,0.5); width: 60px; height: 60px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="position-relative overflow-hidden rounded-4 shadow-sm hover-effect" style="aspect-ratio: 1/1;">
+                            <img src="images/instagram-product-3.png" alt="Product 3" class="w-100 h-100 object-fit-cover">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 overlay" style="background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%);"></div>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <i class="bi bi-instagram text-white fs-2 p-3 rounded-circle d-inline-flex align-items-center justify-content-center" style="background-color: rgba(0,0,0,0.5); width: 60px; height: 60px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="position-relative overflow-hidden rounded-4 shadow-sm hover-effect" style="aspect-ratio: 1/1;">
+                            <img src="images/instagram-product-4.png" alt="Product 4" class="w-100 h-100 object-fit-cover">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 overlay" style="background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%);"></div>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <i class="bi bi-instagram text-white fs-2 p-3 rounded-circle d-inline-flex align-items-center justify-content-center" style="background-color: rgba(0,0,0,0.5); width: 60px; height: 60px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer pt-5 pb-4">
+            <div class="container mb-5">
+                <div class="row mb-4 align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="display-4 fw-bold mb-4" style="color: #3D204E;">Faith Meets Creativity - Customize Your Journey.</h2>
+                        <span class="fs-5">Customized creations to inspire your daily walk with faith.</span>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                        <a href="#products" class="btn px-5 py-3 rounded-pill text-white fs-5" style="background: #3D204E;">Start Your Journey</a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="container">
+                <!-- Main footer content -->
+                <div class="row gy-5">
+                    <!-- Logo/Brand Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" alt="The Blessed Manifest Logo">
+                        </a>
+                        <p class="fs-5 mt-3">Faith driven products made by you with love and purpose</p>
+                    </div>
+
+                    <!-- Quick Menu -->
+                    <div class="col-lg-3 col-md-6 footer-menus">
+                        <h6 class="fw-semibold mb-3">Quick Menu</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">About Us</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Products</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Blogs</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">FAQs</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company Policies -->
+                    <div class="col-lg-3 col-md-6 footer-menus">
+                        <h6 class="fw-semibold mb-3">Company Policies</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Terms and Conditions</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Exchange & Refund Policy</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Privacy Policy</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Shipping policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-menus text-lg-end">
+                        <div class="mb-4">
+                            <h6 class="fw-semibold mb-3">Shop The Following Countries.</h6>
+                            <div class="d-flex justify-content-lg-end">
+                                <div class="dropdown w-100" style="max-width: 250px;">
+                                    <button class="btn btn-outline-dark dropdown-toggle rounded-0 px-4 py-2 w-100 text-start" type="button" data-bs-toggle="dropdown">
+                                        United States (USD $)
+                                    </button>
+                                    <ul class="dropdown-menu w-100 dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">United States (USD $)</a></li>
+                                        <li><a class="dropdown-item" href="#">Canada (CAD $)</a></li>
+                                        <li><a class="dropdown-item" href="#">United Kingdom (GBP £)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="pe-lg-4">
+                            <div class="d-flex gap-3">
+                                <a href="#products" class="btn px-4 py-3 rounded-pill text-white fs-6 fw-semibold w-50" style="background: #3D204E;">
+                                    <i class="fas fa-envelope me-2"></i>Get Inspired Today
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <img src="images/cards.png" alt="Payment methods" class="w-50 img-fluid">
+                    </div>
+                </div>
+
+                <hr class="border-light opacity-25 my-4">
+
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <span>Copyright © 2026 The Blessed Manifest. All Rights Reserved.</span>
+                    <div class="d-flex align-items-center gap-3">
+                        <span>Connect With Us</span>
+                        <a href="#" class="icon-circle d-flex align-items-center justify-content-center" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="icon-circle d-flex align-items-center justify-content-center" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="icon-circle d-flex align-items-center justify-content-center" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
