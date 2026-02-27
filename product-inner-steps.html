@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Blessed Manifest</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg py-2">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="The Blessed Manifest Logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active" aria-current="page" href="#">Bible</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="icon-group d-flex">
+                        <a href="#" class="icon-circle" aria-label="Search">
+                            <i class="bi bi-search"></i>
+                        </a>
+                        <a href="#" class="icon-circle" aria-label="User account">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <a href="#" class="icon-circle" aria-label="Shopping cart">
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent p-0 mb-0 fs-5">
+                        <li class="breadcrumb-item"><a href="#">Products</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Mugs</li>
+                    </ol>
+                </nav>
+                <div class="share-icon d-flex align-items-center gap-1">
+                    <i class="bi bi-share"></i> <span class="fs-6 fw-light">Share</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="edit-layout-section py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="d-flex gap-0" style="min-height: 600px;">
+                            <!-- Sidebar with Tabs -->
+                            <div class="sidebar" id="sidebarMenu" style="height: auto;">
+                                <button class="toggle-btn" id="toggleSidebar">
+                                    <i class="bi bi-chevron-left" id="toggleIcon"></i>
+                                </button>
+                                
+                                <nav class="mt-3" role="tablist">
+                                    <button class="menu-item tab-button active" id="upload-tab" data-bs-toggle="tab" data-bs-target="#upload-content" type="button" role="tab" aria-controls="upload-content" aria-selected="true">
+                                        <i class="fa-solid fa-cloud-arrow-up menu-icon"></i>
+                                        <span class="menu-text">Upload</span>
+                                    </button>
+                                    <button class="menu-item tab-button" id="add-text-tab" data-bs-toggle="tab" data-bs-target="#addtext-content" type="button" role="tab" aria-controls="addtext-content" aria-selected="false">
+                                        <i class="fa-solid fa-font menu-icon"></i>
+                                        <span class="menu-text">Add Text</span>
+                                    </button>
+                                    <button class="menu-item tab-button" id="quick-design-tab" data-bs-toggle="tab" data-bs-target="#quickdesign-content" type="button" role="tab" aria-controls="quickdesign-content" aria-selected="false">
+                                        <i class="fa-solid fa-image menu-icon"></i>
+                                        <span class="menu-text">Quick Design</span>
+                                    </button>
+                                    <button class="menu-item tab-button" id="product-colors-tab" data-bs-toggle="tab" data-bs-target="#productcolors-content" type="button" role="tab" aria-controls="productcolors-content" aria-selected="false">
+                                        <i class="fa-solid fa-palette menu-icon"></i>
+                                        <span class="menu-text">Product Colors</span>
+                                    </button>
+                                </nav>
+                            </div>
+                            
+                            <!-- Left Content Area - Tab Panels -->
+                            <div class="flex-grow-1" style="background: #fff; padding: 24px; width: 20%;">
+                                <div class="tab-content" id="contentTabContent">
+                                    <!-- Upload Tab Content -->
+                                    <div class="tab-pane fade show active" id="upload-content" role="tabpanel" aria-labelledby="upload-tab">
+                                        <div class="text-center upload-container">
+                                            <h3 class="fw-bold mb-3" style="color: #3D204E;">Choose File To Upload</h3>
+                                            
+                                            <div class="mb-4">
+                                                <h5 class="fw-bold fs-4 mb-1" style="color: #3D204E;">High Resolution Artwork</h5>
+                                                <p class="fw-bold fs-4 mb-0" style="color: #3D204E;">Will Look Best.</p>
+                                            </div>
+                                            
+                                            <!-- Upload Area -->
+                                            <div class="upload-area text-center p-5 mb-4" style="border: 2px dashed #3D204E; border-radius: 16px; background: #f8f9fa; cursor: pointer;">
+                                                <div class="upload-icon mb-3">
+                                                    <i class="fa-solid fa-cloud-arrow-up fs-1" style="color: #3D204E;"></i>
+                                                </div>
+                                                <h5 class="fw-semibold mb-2">Drag & Drop or Browse Your Computer</h5>
+                                                <p class="text-secondary">JPG and PNG (Max 5 MB)</p>
+                                                
+                                                <!-- Hidden file input -->
+                                                <input type="file" id="fileUpload" class="d-none" accept=".jpg,.jpeg,.png,.eps,.ai,.pdf">
+                                                <button class="btn px-4 py-2 rounded-pill text-white mt-2" style="background: #3D204E;" onclick="document.getElementById('fileUpload').click();">
+                                                    Browse Files
+                                                </button>
+                                            </div>
+                                            
+                                            <!-- Email Option -->
+                                            <div class="email-option p-4" style="background: #f8f9fa; border-radius: 16px;">
+                                                <p class="mb-2">Have a file type not listed above?</p>
+                                                <p class="mb-0">Email it to us and we'll review it and have someone reach out to you before we produce your order!</p>
+                                                <a href="mailto:designs@theblessedmanifest.com" class="btn btn-outline-purple rounded-pill px-4 py-2 mt-3" style="border-color: #3D204E; color: #3D204E;">
+                                                    <i class="fa-regular fa-envelope me-2"></i>Email Us
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Add Text Tab Content -->
+                                    <div class="tab-pane fade" id="addtext-content" role="tabpanel" aria-labelledby="add-text-tab">
+                                        <div class="add-text-container">
+                                            <h3 class="fw-bold mb-3 text-center" style="color: #3D204E;">Add Text</h3>
+                                            
+                                            <!-- Text Input and Presets -->
+                                            <div class="mb-4">
+                                                <div class="mb-3">
+                                                    <input type="text" class="form-control form-control-lg" placeholder="Enter Text Here" style="border: 1px solid #ddd; border-radius: 12px; padding: 12px;">
+                                                </div>
+                                                
+                                                <!-- Text Presets Dropdown -->
+                                                <div class="dropdown mb-4">
+                                                    <button class="btn btn-outline-purple w-100 text-start d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" style="border-color: #3D204E; color: #3D204E; border-radius: 12px; padding: 12px;">
+                                                        <span>Text Presets</span>
+                                                        <i class="bi bi-chevron-down"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu w-100">
+                                                        <li><a class="dropdown-item" href="#">Faith & Hope</a></li>
+                                                        <li><a class="dropdown-item" href="#">Blessings</a></li>
+                                                        <li><a class="dropdown-item" href="#">Scripture Verses</a></li>
+                                                        <li><a class="dropdown-item" href="#">Inspirational</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Text Templates Grid -->
+                                            <div class="text-templates mb-4">
+                                                <div class="row g-3">
+                                                    <div class="col-6">
+                                                        <div class="template-item p-3 text-center" style="background: #f8f9fa; border-radius: 12px; border: 1px solid #eee;">
+                                                            <span class="fw-bold" style="color: #3D204E;">Your text here</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="template-item p-3 text-center" style="background: #f8f9fa; border-radius: 12px; border: 1px solid #eee;">
+                                                            <span class="fw-bold" style="color: #3D204E;">Your text here</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="template-item p-3 text-center" style="background: #f8f9fa; border-radius: 12px; border: 1px solid #eee;">
+                                                            <span class="fw-bold" style="color: #3D204E;">Your text here</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="template-item p-3 text-center" style="background: #f8f9fa; border-radius: 12px; border: 1px solid #eee;">
+                                                            <span class="fw-bold" style="color: #3D204E;">Your text here</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Add To Design Button -->
+                                            <button class="btn text-white w-100 py-3 rounded-pill fs-5" style="background: #3D204E;">
+                                                Add To Design
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Quick Design Tab Content -->
+                                    <div class="tab-pane fade" id="quickdesign-content" role="tabpanel" aria-labelledby="quick-design-tab">
+                                        <div class="quick-design-container">
+                                            <!-- Header with title on left and See More on right -->
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h3 class="fw-bold mb-0" style="color: #3D204E;">Quick Design</h3>
+                                                <a href="#" class="text-decoration-none fw-semibold" style="color: #3D204E;">
+                                                    See More <i class="bi bi-arrow-right ms-1"></i>
+                                                </a>
+                                            </div>
+                                            
+                                            <!-- Image Gallery - 3 images in a row -->
+                                            <div class="row g-3 mb-4">
+                                                <div class="col-4">
+                                                    <div class="perfection-quote p-2" style="border-radius: 12px; border: 1px solid #3D204E; background: white;">
+                                                        <img src="images/qd-1.png" alt="Quick design 1" class="img-fluid w-100" style="border-radius: 8px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="perfection-quote p-2" style="border-radius: 12px; border: 1px solid #3D204E; background: white;">
+                                                        <img src="images/qd-2.png" alt="Quick design 2" class="img-fluid w-100" style="border-radius: 8px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="perfection-quote p-2" style="border-radius: 12px; border: 1px solid #3D204E; background: white;">
+                                                        <img src="images/qd-3.png" alt="Quick design 3" class="img-fluid w-100" style="border-radius: 8px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="perfection-quote p-2" style="border-radius: 12px; border: 1px solid #3D204E; background: white;">
+                                                        <img src="images/qd-1.png" alt="Quick design 1" class="img-fluid w-100" style="border-radius: 8px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="perfection-quote p-2" style="border-radius: 12px; border: 1px solid #3D204E; background: white;">
+                                                        <img src="images/qd-2.png" alt="Quick design 2" class="img-fluid w-100" style="border-radius: 8px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="perfection-quote p-2" style="border-radius: 12px; border: 1px solid #3D204E; background: white;">
+                                                        <img src="images/qd-3.png" alt="Quick design 3" class="img-fluid w-100" style="border-radius: 8px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Add To Design Button -->
+                                            <button class="btn text-white w-100 py-3 rounded-pill fs-5" style="background: #3D204E;">
+                                                Add To Design
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Product Colors Tab Content -->
+                                    <div class="tab-pane fade" id="productcolors-content" role="tabpanel" aria-labelledby="product-colors-tab">
+                                        <div class="product-colors-container">
+                                            <!-- Header with title on left and See More on right -->
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h3 class="fw-bold mb-0" style="color: #3D204E;">Choose Your Product Color</h3>
+                                                <a href="#" class="text-decoration-none fw-semibold" style="color: #3D204E;">
+                                                    See More <i class="bi bi-arrow-right ms-1"></i>
+                                                </a>
+                                            </div>
+                                            
+                                            <!-- Color Selection and Size Info -->
+                                            <div class="color-size-section mb-4 p-3" style="background: #f8f9fa; border-radius: 12px;">
+                                                <!-- Available Colors -->
+                                                <div class="mb-3">
+                                                    <p class="fw-semibold mb-2" style="color: #3D204E;">Sizes Available In:</p>
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <span class="fw-bold fs-5" style="color: #3D204E;">White</span>
+                                                        <span class="text-secondary">One Size</span>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Color Swatches -->
+                                                <div class="color-swatches">
+                                                    <div class="d-flex gap-3 align-items-center">
+                                                        <div class="color-swatch active" style="width: 40px; height: 40px; background: white; border: 2px solid #3D204E; border-radius: 50%; cursor: pointer; box-shadow: 0 2px 8px rgba(61,32,78,0.2);"></div>
+                                                        <div class="color-swatch" style="width: 40px; height: 40px; background: #000000; border-radius: 50%; cursor: pointer;"></div>
+                                                        <div class="color-swatch" style="width: 40px; height: 40px; background: #8B4513; border-radius: 50%; cursor: pointer;"></div>
+                                                        <div class="color-swatch" style="width: 40px; height: 40px; background: #FFC0CB; border-radius: 50%; cursor: pointer;"></div>
+                                                        <div class="color-swatch" style="width: 40px; height: 40px; background: #87CEEB; border-radius: 50%; cursor: pointer;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Product Colors Link at Bottom -->
+                                            <div class="product-colors-link text-center mt-4">
+                                                <a href="#" class="text-decoration-none fw-semibold" style="color: #3D204E;">
+                                                    PRODUCT COLORS <i class="bi bi-arrow-right ms-1"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Image Area - Main Product Display -->
+                            <div class="main-image-area" style="background: #EEEEEE; padding: 16px; width: 55%; position: relative;">
+                                <div class="d-flex flex-column h-100">
+                                    <!-- Undo/Redo buttons on top left -->
+                                    <div class="position-absolute top-0 start-0 z-1" style="margin: 16px;">
+                                        <div class="d-flex flex-column gap-2 bg-white p-2 rounded-3 shadow-sm">
+                                            <button class="btn btn-sm rounded-circle p-1 border-0 d-flex flex-column align-items-center" style="width: auto; height: auto; background: white; padding: 8px 12px !important;">
+                                                <i class="fa-solid fa-rotate-left fs-5 mb-1"></i>
+                                                <span>Undo</span>
+                                            </button>
+                                            <button class="btn btn-sm rounded-circle p-1 border-0 d-flex flex-column align-items-center" style="width: auto; height: auto; background: white; padding: 8px 12px !important;">
+                                                <i class="fa-solid fa-rotate-right fs-5 mb-1"></i>
+                                                <span>Redo</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Undo/Redo buttons on top right -->
+                                    <div class="position-absolute top-0 end-0 z-1" style="margin: 16px;">
+                                        <div class="d-flex flex-column gap-2 bg-white p-2 rounded-3 shadow-sm">
+                                            <button class="btn btn-sm rounded-circle p-1 border-0 d-flex flex-column align-items-center" style="width: auto; height: auto; background: white; padding: 8px 12px !important;">
+                                                <img src="images/front-mug.png" width="40" alt="">
+                                                <span>Front</span>
+                                            </button>
+                                            <button class="btn btn-sm rounded-circle p-1 border-0 d-flex flex-column align-items-center" style="width: auto; height: auto; background: white; padding: 8px 12px !important;">
+                                                <img src="images/back-mug.png" width="40" alt="">
+                                                <span>Back</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Centered image that takes all space - unaffected by buttons -->
+                                    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+                                        <img src="images/p-mug.png" alt="White Glossy Mug" class="img-fluid" style="max-width: 80%; max-height: 95%; object-fit: contain;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-4">
+            <div class="row g-5">
+
+                <!-- RIGHT COL: all product details exactly as image specification -->
+                <div class="col-md-6">
+                    <h1 class="display-5 fw-bold" style="color: #3D204E;">White Glossy Mug</h1>
+                    
+                    <!-- descriptive text (exact copy from PNG, with line breaks for readability) -->
+                    <p class="mt-3" style="font-size: 1.2rem; line-height: 1.4;">
+                        Enjoy your favorite tea or coffee by the fire with the 14 oz. Rover <br>
+                        Stainless Steel Insulated Camper Mug! Its durable, double-wall vacuum <br>
+                        construction keeps your beverage hot for 5 hours or cold for 15 hours.
+                    </p>
+                    <div class="accordion transparent-accordion" id="accordionExample">
+                        <!-- Accordion Item 1 -->
+                        <div class="accordion-item border-0 border-bottom" style="border-color: #3D204E !important; background: transparent;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background: transparent; box-shadow: none; border: none; color: #3D204E;">
+                                    <span class="fs-5 me-2">Product Description</span>
+                                    <span class="accordion-icon ms-auto">
+                                        <i class="bi bi-plus fs-5"></i>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="fs-5 accordion-body px-0 py-3" style="background: transparent;">
+                                    This sturdy mug is perfect for your morning coffee, afternoon tea, or whatever hot beverage you enjoy. It's glossy white and yields vivid prints that retain their quality when dish-washed and microwaved. Add a graphic of your choice and add this best-seller to your store, so others can enjoy your magical designs too!.Disclaimer: The White Glossy Mug may vary slightly in size by up to +/- 0.1″ (2 mm) due to the nature of the production process. These variations are normal and won’t affect your mug’s quality or functionality. This product is made on demand. No minimums.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Accordion Item 2 -->
+                        <div class="accordion-item border-0 border-bottom" style="border-color: #3D204E !important; background: transparent;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background: transparent; box-shadow: none; border: none; color: #3D204E;">
+                                    <span class="fs-5 me-2">Product Details</span>
+                                    <span class="accordion-icon ms-auto">
+                                        <i class="bi bi-plus fs-5"></i>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="fs-5 accordion-body px-0 py-3" style="background: transparent;">
+                                    After selecting your product, you'll be taken to our customization page where you can upload your design files. Simply click the "Upload Design" button, select your file from your computer, and position it on the product preview. We accept JPG, PNG, and PDF files up to 20MB.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Accordion Item 3 -->
+                        <div class="accordion-item border-0 border-bottom" style="border-color: #3D204E !important; background: transparent;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-semibold px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background: transparent; box-shadow: none; border: none; color: #3D204E;">
+                                    <span class="fs-5 me-2">Delivery Options</span>
+                                    <span class="accordion-icon ms-auto">
+                                        <i class="bi bi-plus fs-5"></i>
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="fs-5 accordion-body px-0 py-3" style="background: transparent;">
+                                    For best results, we recommend high-resolution files (300 DPI) in JPG, PNG, or PDF format. Your design should be at least 1000 x 1000 pixels. For text-only designs, we offer various fonts you can choose from without needing to upload a file.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- LEFT COL: images (mockup) -->
+                <div class="col-md-6">
+                    <!-- START DESIGNING button -->
+                    <div class="d-flex align-items-center justify-content-end gap-3 my-4">
+                        <h4 class="fw-semibold display-1">$7.95</h4>
+                        <a href="#products" class="btn px-5 py-3 rounded-pill text-white fs-5" style="background: #3D204E; width: auto; min-width: 250px;">Continue To Checkout</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-4 text-start">
+                            <span class="fs-5 fw-semibold d-block mb-2" style="color: #3D204E">Additional Product Views</span>
+                            <div class="product-img-large position-relative d-flex justify-content-end">
+                                <img src="images/product-1.png" alt="White Glossy Mug" class="img-square" style="max-width: 100%;">
+                            </div>
+                            <div class="d-flex gap-3 mt-3 justify-content-start">
+                                <img src="images/product-1.png" alt="thumb" class="thumb-img active">
+                                <img src="images/product-2.png" alt="thumb" class="thumb-img">
+                                <img src="images/product-3.png" alt="thumb" class="thumb-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer pt-5 pb-4">
+            <div class="container mb-5">
+                <div class="row mb-4 align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="display-4 fw-bold mb-4" style="color: #3D204E;">Faith Meets Creativity - Customize Your Journey.</h2>
+                        <span class="fs-5">Customized creations to inspire your daily walk with faith.</span>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                        <a href="#products" class="btn px-5 py-3 rounded-pill text-white fs-5" style="background: #3D204E;">Start Your Journey</a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="container">
+                <!-- Main footer content -->
+                <div class="row gy-5">
+                    <!-- Logo/Brand Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" alt="The Blessed Manifest Logo">
+                        </a>
+                        <p class="fs-5 mt-3">Faith driven products made by you with love and purpose</p>
+                    </div>
+
+                    <!-- Quick Menu -->
+                    <div class="col-lg-3 col-md-6 footer-menus">
+                        <h6 class="fw-semibold mb-3">Quick Menu</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">About Us</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Products</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Blogs</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">FAQs</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company Policies -->
+                    <div class="col-lg-3 col-md-6 footer-menus">
+                        <h6 class="fw-semibold mb-3">Company Policies</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Terms and Conditions</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Exchange & Refund Policy</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Privacy Policy</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Shipping policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-menus text-lg-end">
+                        <div class="mb-4">
+                            <h6 class="fw-semibold mb-3">Shop The Following Countries.</h6>
+                            <div class="d-flex justify-content-lg-end">
+                                <div class="dropdown w-100" style="max-width: 250px;">
+                                    <button class="btn btn-outline-dark dropdown-toggle rounded-0 px-4 py-2 w-100 text-start" type="button" data-bs-toggle="dropdown">
+                                        United States (USD $)
+                                    </button>
+                                    <ul class="dropdown-menu w-100 dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">United States (USD $)</a></li>
+                                        <li><a class="dropdown-item" href="#">Canada (CAD $)</a></li>
+                                        <li><a class="dropdown-item" href="#">United Kingdom (GBP £)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="pe-lg-4">
+                            <div class="d-flex gap-3">
+                                <a href="#products" class="btn px-4 py-3 rounded-pill text-white fs-6 fw-semibold w-50" style="background: #3D204E;">
+                                    <i class="fas fa-envelope me-2"></i>Get Inspired Today
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <img src="images/cards.png" alt="Payment methods" class="w-50 img-fluid">
+                    </div>
+                </div>
+
+                <hr class="border-light opacity-25 my-4">
+
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <span>Copyright © 2026 The Blessed Manifest. All Rights Reserved.</span>
+                    <div class="d-flex align-items-center gap-3">
+                        <span>Connect With Us</span>
+                        <a href="#" class="icon-circle d-flex align-items-center justify-content-center" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="icon-circle d-flex align-items-center justify-content-center" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="icon-circle d-flex align-items-center justify-content-center" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/product-inner-steps.js"></script>
+    </body>
+</html>
