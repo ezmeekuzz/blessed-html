@@ -59,3 +59,52 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check on resize
     window.addEventListener('resize', handleResize);
 });
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the main image area element
+    const mainImageArea = document.querySelector('.main-image-area');
+    
+    // Get all tab buttons
+    const createNewTab = document.getElementById('create-new-tab');
+    const otherTabs = document.querySelectorAll('.tab-button:not(#create-new-tab)');
+    
+    // Function to show main image area
+    function showMainImageArea() {
+        if (mainImageArea) {
+            mainImageArea.style.display = 'block';
+        }
+    }
+    
+    // Function to hide main image area
+    function hideMainImageArea() {
+        if (mainImageArea) {
+            mainImageArea.style.display = 'none';
+        }
+    }
+    
+    // Add click event to Create New tab
+    if (createNewTab) {
+        createNewTab.addEventListener('click', function() {
+            hideMainImageArea();
+        });
+    }
+    
+    // Add click events to all other tabs
+    otherTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            showMainImageArea();
+        });
+    });
+    
+    // Also handle Bootstrap tab events for more reliable tab switching
+    const tabElements = document.querySelectorAll('button[data-bs-toggle="tab"]');
+    tabElements.forEach(tab => {
+        tab.addEventListener('shown.bs.tab', function(event) {
+            // Check if the activated tab is the Create New tab
+            if (event.target.id === 'create-new-tab') {
+                hideMainImageArea();
+            } else {
+                showMainImageArea();
+            }
+        });
+    });
+});

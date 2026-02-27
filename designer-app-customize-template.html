@@ -83,30 +83,40 @@
                                 </button>
                                 
                                 <nav class="mt-3" role="tablist">
-                                    <button class="menu-item tab-button active" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-content" type="button" role="tab" aria-controls="design-content" aria-selected="false">
-                                        <i class="fa-solid fa-table-columns menu-icon"></i>
-                                        <span class="menu-text">Design</span>
-                                    </button>
-                                    <button class="menu-item tab-button" id="elements-tab" data-bs-toggle="tab" data-bs-target="#elements-content" type="button" role="tab" aria-controls="elements-content" aria-selected="false">
-                                        <i class="fa-solid fa-palette menu-icon"></i>
-                                        <span class="menu-text">Elements</span>
-                                    </button>
-                                    <button class="menu-item tab-button" id="add-text-tab" data-bs-toggle="tab" data-bs-target="#addtext-content" type="button" role="tab" aria-controls="addtext-content" aria-selected="false">
-                                        <i class="fa-solid fa-font menu-icon"></i>
-                                        <span class="menu-text">Add Text</span>
-                                    </button>
-                                    <button class="menu-item tab-button" id="upload-tab" data-bs-toggle="tab" data-bs-target="#upload-content" type="button" role="tab" aria-controls="upload-content" aria-selected="true">
-                                        <i class="fa-solid fa-cloud-arrow-up menu-icon"></i>
-                                        <span class="menu-text">Uploads</span>
-                                    </button>
-                                    <button class="menu-item tab-button" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools-content" type="button" role="tab" aria-controls="tools-content" aria-selected="true">
-                                        <i class="fa-solid fa-paintbrush menu-icon"></i>
-                                        <span class="menu-text">Tools</span>
-                                    </button>
-                                    <button class="menu-item tab-button" id="bible-tab" data-bs-toggle="tab" data-bs-target="#bible-content" type="button" role="tab" aria-controls="bible-content" aria-selected="false">
-                                        <i class="fa-solid fa-bible menu-icon"></i>
-                                        <span class="menu-text">Bible</span>
-                                    </button>
+                                    <div>
+                                        <button class="menu-item tab-button active" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-content" type="button" role="tab" aria-controls="design-content" aria-selected="false">
+                                            <i class="fa-solid fa-table-columns menu-icon"></i>
+                                            <span class="menu-text">Design</span>
+                                        </button>
+                                        <button class="menu-item tab-button" id="elements-tab" data-bs-toggle="tab" data-bs-target="#elements-content" type="button" role="tab" aria-controls="elements-content" aria-selected="false">
+                                            <i class="fa-solid fa-palette menu-icon"></i>
+                                            <span class="menu-text">Elements</span>
+                                        </button>
+                                        <button class="menu-item tab-button" id="add-text-tab" data-bs-toggle="tab" data-bs-target="#addtext-content" type="button" role="tab" aria-controls="addtext-content" aria-selected="false">
+                                            <i class="fa-solid fa-font menu-icon"></i>
+                                            <span class="menu-text">Add Text</span>
+                                        </button>
+                                        <button class="menu-item tab-button" id="upload-tab" data-bs-toggle="tab" data-bs-target="#upload-content" type="button" role="tab" aria-controls="upload-content" aria-selected="true">
+                                            <i class="fa-solid fa-cloud-arrow-up menu-icon"></i>
+                                            <span class="menu-text">Uploads</span>
+                                        </button>
+                                        <button class="menu-item tab-button" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools-content" type="button" role="tab" aria-controls="tools-content" aria-selected="true">
+                                            <i class="fa-solid fa-paintbrush menu-icon"></i>
+                                            <span class="menu-text">Tools</span>
+                                        </button>
+                                        <button class="menu-item tab-button" id="bible-tab" data-bs-toggle="tab" data-bs-target="#bible-content" type="button" role="tab" aria-controls="bible-content" aria-selected="false">
+                                            <i class="fa-solid fa-bible menu-icon"></i>
+                                            <span class="menu-text">Bible</span>
+                                        </button>
+                                    </div>
+                                    
+                                    <!-- Create New Tab Button at the bottom -->
+                                    <div style="margin-top: auto; padding-top: 15px;">
+                                        <button class="menu-item tab-button" id="create-new-tab" data-bs-toggle="tab" data-bs-target="#create-new-content" type="button" role="tab" aria-controls="create-new-content" aria-selected="false" style="border-top: 1px solid rgba(61,32,78,0.2); border-radius: 0;">
+                                            <i class="fa-solid fa-plus-circle menu-icon"></i>
+                                            <span class="menu-text fw-bold">Create New</span>
+                                        </button>
+                                    </div>
                                 </nav>
                             </div>
                             
@@ -904,6 +914,151 @@
                                                     <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(18)">18</button>
                                                     <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(19)">19</button>
                                                     <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(20)">20</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        <!-- Create New Tab Content -->
+                                    <div class="tab-pane fade" id="create-new-content" role="tabpanel" aria-labelledby="create-new-tab">
+                                        <div class="create-new-container d-flex flex-column" style="height: 100%; position: relative;">
+                                            <!-- Sticky Header -->
+                                            <h5 class="fw-semibold mb-4 py-2" style="color: #3D204E; position: sticky; top: 0; background: white; z-index: 20; margin-top: -8px;">Create New Design</h5>
+                                            
+                                            <!-- Scrollable Content Area -->
+                                            <div style="flex: 1; overflow-y: auto; padding-right: 5px;">
+                                                <div class="row g-4">
+                                                    <div class="col-lg-4">
+                                                        <!-- Custom Size Form - Block layout -->
+                                                        <div class="custom-size-form">
+                                                            <div class="mb-4">
+                                                                <label class="form-label fw-medium d-block" style="color: #3D204E; font-size: 0.9rem;">Width</label>
+                                                                <input type="number" class="form-control d-block w-100" placeholder="Enter width" style="border-radius: 12px; border: 1px solid #ddd; padding: 0.6rem 1rem;">
+                                                            </div>
+                                                            
+                                                            <div class="mb-4">
+                                                                <label class="form-label fw-medium d-block" style="color: #3D204E; font-size: 0.9rem;">Height</label>
+                                                                <input type="number" class="form-control d-block w-100" placeholder="Enter height" style="border-radius: 12px; border: 1px solid #ddd; padding: 0.6rem 1rem;">
+                                                            </div>
+                                                            
+                                                            <div class="mb-4">
+                                                                <label class="form-label fw-medium d-block" style="color: #3D204E; font-size: 0.9rem;">Units</label>
+                                                                <select class="form-select d-block w-100" style="border-radius: 12px; border: 1px solid #ddd; padding: 0.6rem 1rem;">
+                                                                    <option selected>Pixels (px)</option>
+                                                                    <option>Inches (in)</option>
+                                                                    <option>Centimeters (cm)</option>
+                                                                    <option>Millimeters (mm)</option>
+                                                                </select>
+                                                            </div>
+                                                            
+                                                            <div class="mt-5">
+                                                                <button class="btn w-100 py-3 rounded-pill fw-semibold d-block" style="background: #3D204E; color: white; border: none;">
+                                                                    Create New Design
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Right Column - Scrollable Template Cards -->
+                                                    <div class="col-lg-8" style="height: 100%;">
+                                                        <div class="row py-2" style="max-height: 500px; overflow-y: auto; padding-right: 10px;">
+                                                            <div class="col-md-4">
+                                                                <div class="template-card p-3 py-5 d-flex align-items-center">
+                                                                    <div class="template-img me-3 flex-shrink-0">
+                                                                        <img src="images/front-mug.png" width="80" alt="">
+                                                                    </div>
+                                                                    <h5 class="fw-semibold mb-0" style="color: #3D204E;">Vision Board</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="template-card p-3 py-5 d-flex align-items-center">
+                                                                    <div class="template-img me-3 flex-shrink-0">
+                                                                        <img src="images/front-mug.png" width="80" alt="">
+                                                                    </div>
+                                                                    <h5 class="fw-semibold mb-0" style="color: #3D204E;">Vision Board</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="template-card p-3 py-5 d-flex align-items-center">
+                                                                    <div class="template-img me-3 flex-shrink-0">
+                                                                        <img src="images/front-mug.png" width="80" alt="">
+                                                                    </div>
+                                                                    <h5 class="fw-semibold mb-0" style="color: #3D204E;">Vision Board</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="template-card p-3 py-5 d-flex align-items-center">
+                                                                    <div class="template-img me-3 flex-shrink-0">
+                                                                        <img src="images/front-mug.png" width="80" alt="">
+                                                                    </div>
+                                                                    <h5 class="fw-semibold mb-0" style="color: #3D204E;">Vision Board</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="template-card p-3 py-5 d-flex align-items-center">
+                                                                    <div class="template-img me-3 flex-shrink-0">
+                                                                        <img src="images/front-mug.png" width="80" alt="">
+                                                                    </div>
+                                                                    <h5 class="fw-semibold mb-0" style="color: #3D204E;">Vision Board</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="template-card p-3 py-5 d-flex align-items-center">
+                                                                    <div class="template-img me-3 flex-shrink-0">
+                                                                        <img src="images/front-mug.png" width="80" alt="">
+                                                                    </div>
+                                                                    <h5 class="fw-semibold mb-0" style="color: #3D204E;">Vision Board</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="template-card p-3 py-5 d-flex align-items-center">
+                                                                    <div class="template-img me-3 flex-shrink-0">
+                                                                        <img src="images/front-mug.png" width="80" alt="">
+                                                                    </div>
+                                                                    <h5 class="fw-semibold mb-0" style="color: #3D204E;">Vision Board</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="template-card p-3 py-5 d-flex align-items-center">
+                                                                    <div class="template-img me-3 flex-shrink-0">
+                                                                        <img src="images/front-mug.png" width="80" alt="">
+                                                                    </div>
+                                                                    <h5 class="fw-semibold mb-0" style="color: #3D204E;">Vision Board</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="template-card p-3 py-5 d-flex align-items-center">
+                                                                    <div class="template-img me-3 flex-shrink-0">
+                                                                        <img src="images/front-mug.png" width="80" alt="">
+                                                                    </div>
+                                                                    <h5 class="fw-semibold mb-0" style="color: #3D204E;">Vision Board</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="template-card p-3 py-5 d-flex align-items-center">
+                                                                    <div class="template-img me-3 flex-shrink-0">
+                                                                        <img src="images/front-mug.png" width="80" alt="">
+                                                                    </div>
+                                                                    <h5 class="fw-semibold mb-0" style="color: #3D204E;">Vision Board</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="template-card p-3 py-5 d-flex align-items-center">
+                                                                    <div class="template-img me-3 flex-shrink-0">
+                                                                        <img src="images/front-mug.png" width="80" alt="">
+                                                                    </div>
+                                                                    <h5 class="fw-semibold mb-0" style="color: #3D204E;">Vision Board</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="template-card p-3 py-5 d-flex align-items-center">
+                                                                    <div class="template-img me-3 flex-shrink-0">
+                                                                        <img src="images/front-mug.png" width="80" alt="">
+                                                                    </div>
+                                                                    <h5 class="fw-semibold mb-0" style="color: #3D204E;">Vision Board</h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
