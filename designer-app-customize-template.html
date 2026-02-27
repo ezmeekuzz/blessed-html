@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Blessed Manifest</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg py-2">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="The Blessed Manifest Logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active" aria-current="page" href="#">Bible</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="icon-group d-flex">
+                        <a href="#" class="icon-circle" aria-label="Search">
+                            <i class="bi bi-search"></i>
+                        </a>
+                        <a href="#" class="icon-circle" aria-label="User account">
+                            <i class="bi bi-person"></i>
+                        </a>
+                        <a href="#" class="icon-circle" aria-label="Shopping cart">
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent p-0 mb-0 fs-5">
+                        <li class="breadcrumb-item"><a href="#">Products</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Mugs</li>
+                    </ol>
+                </nav>
+                <div class="share-icon d-flex align-items-center gap-1">
+                    <i class="bi bi-share"></i> <span class="fs-6 fw-light">Share</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="edit-layout-section py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="d-flex gap-0" style="min-height: 600px; height: 600px; max-height: 600px;">
+                            <!-- Sidebar with Tabs - fixed height -->
+                            <div class="sidebar" id="sidebarMenu" style="height: 600px; overflow-y: auto; overflow-x: hidden;">
+                                <button class="toggle-btn" id="toggleSidebar">
+                                    <i class="bi bi-chevron-left" id="toggleIcon"></i>
+                                </button>
+                                
+                                <nav class="mt-3" role="tablist">
+                                    <button class="menu-item tab-button active" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-content" type="button" role="tab" aria-controls="design-content" aria-selected="false">
+                                        <i class="fa-solid fa-table-columns menu-icon"></i>
+                                        <span class="menu-text">Design</span>
+                                    </button>
+                                    <button class="menu-item tab-button" id="elements-tab" data-bs-toggle="tab" data-bs-target="#elements-content" type="button" role="tab" aria-controls="elements-content" aria-selected="false">
+                                        <i class="fa-solid fa-palette menu-icon"></i>
+                                        <span class="menu-text">Elements</span>
+                                    </button>
+                                    <button class="menu-item tab-button" id="add-text-tab" data-bs-toggle="tab" data-bs-target="#addtext-content" type="button" role="tab" aria-controls="addtext-content" aria-selected="false">
+                                        <i class="fa-solid fa-font menu-icon"></i>
+                                        <span class="menu-text">Add Text</span>
+                                    </button>
+                                    <button class="menu-item tab-button" id="upload-tab" data-bs-toggle="tab" data-bs-target="#upload-content" type="button" role="tab" aria-controls="upload-content" aria-selected="true">
+                                        <i class="fa-solid fa-cloud-arrow-up menu-icon"></i>
+                                        <span class="menu-text">Uploads</span>
+                                    </button>
+                                    <button class="menu-item tab-button" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools-content" type="button" role="tab" aria-controls="tools-content" aria-selected="true">
+                                        <i class="fa-solid fa-paintbrush menu-icon"></i>
+                                        <span class="menu-text">Tools</span>
+                                    </button>
+                                    <button class="menu-item tab-button" id="bible-tab" data-bs-toggle="tab" data-bs-target="#bible-content" type="button" role="tab" aria-controls="bible-content" aria-selected="false">
+                                        <i class="fa-solid fa-bible menu-icon"></i>
+                                        <span class="menu-text">Bible</span>
+                                    </button>
+                                </nav>
+                            </div>
+                            
+                            <!-- Left Content Area - Tab Panels - fixed height with scrolling -->
+                            <div class="flex-grow-1" style="background: #fff; padding: 24px; width: 20%; height: 600px; overflow-y: auto;">
+                                <div class="tab-content" id="contentTabContent">
+                                    <div class="tab-pane fade show active" id="design-content" role="tabpanel" aria-labelledby="design-tab">   
+                                        <h5 class="fw-semibold" style="color: #3D204E;">Templates</h5>  
+                                        <div class="row g-4 py-4">     
+                                            <span>Recently Used</span>           
+                                            <div class="col-md-4">
+                                                <!-- Template Card 1 - Letter Size -->
+                                                <div class="template-card border" 
+                                                    style="aspect-ratio: 8.5/11; width: 100%; border-radius: 16px; overflow: hidden;">
+                                                    <img src="images/template-1.png" class="w-100 h-100" style="object-fit: cover;" alt="">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                <!-- Template Card 2 - Letter Size -->
+                                                <div class="template-card border" 
+                                                    style="aspect-ratio: 8.5/11; width: 100%; border-radius: 16px; overflow: hidden;">
+                                                    <img src="images/template-2.png" class="w-100 h-100" style="object-fit: cover;" alt="">
+                                                </div>
+                                            </div>
+                                        </div>     
+                                        <div class="row g-4 py-3">    
+                                            <span>All Results</span>      
+                                            <div class="col-md-4">
+                                                <!-- Template Card 1 - Letter Size -->
+                                                <div class="template-card border" 
+                                                    style="aspect-ratio: 8.5/11; width: 100%; border-radius: 16px; overflow: hidden;">
+                                                    <img src="images/template-1.png" class="w-100 h-100" style="object-fit: cover;" alt="">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                <!-- Template Card 2 - Letter Size -->
+                                                <div class="template-card border" 
+                                                    style="aspect-ratio: 8.5/11; width: 100%; border-radius: 16px; overflow: hidden;">
+                                                    <img src="images/template-2.png" class="w-100 h-100" style="object-fit: cover;" alt="">
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-md-4">
+                                                <!-- Template Card 2 - Letter Size -->
+                                                <div class="template-card border" 
+                                                    style="aspect-ratio: 8.5/11; width: 100%; border-radius: 16px; overflow: hidden;">
+                                                    <img src="images/template-3.png" class="w-100 h-100" style="object-fit: cover;" alt="">
+                                                </div>
+                                            </div>       
+                                            <div class="col-md-4">
+                                                <!-- Template Card 1 - Letter Size -->
+                                                <div class="template-card border" 
+                                                    style="aspect-ratio: 8.5/11; width: 100%; border-radius: 16px; overflow: hidden;">
+                                                    <img src="images/template-4.png" class="w-100 h-100" style="object-fit: cover;" alt="">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                <!-- Template Card 2 - Letter Size -->
+                                                <div class="template-card border" 
+                                                    style="aspect-ratio: 8.5/11; width: 100%; border-radius: 16px; overflow: hidden;">
+                                                    <img src="images/template-5.png" class="w-100 h-100" style="object-fit: cover;" alt="">
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-md-4">
+                                                <!-- Template Card 2 - Letter Size -->
+                                                <div class="template-card border" 
+                                                    style="aspect-ratio: 8.5/11; width: 100%; border-radius: 16px; overflow: hidden;">
+                                                    <img src="images/template-6.png" class="w-100 h-100" style="object-fit: cover;" alt="">
+                                                </div>
+                                            </div>       
+                                            <div class="col-md-4">
+                                                <!-- Template Card 1 - Letter Size -->
+                                                <div class="template-card border" 
+                                                    style="aspect-ratio: 8.5/11; width: 100%; border-radius: 16px; overflow: hidden;">
+                                                    <img src="images/template-7.png" class="w-100 h-100" style="object-fit: cover;" alt="">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-4">
+                                                <!-- Template Card 2 - Letter Size -->
+                                                <div class="template-card border" 
+                                                    style="aspect-ratio: 8.5/11; width: 100%; border-radius: 16px; overflow: hidden;">
+                                                    <img src="images/template-8.png" class="w-100 h-100" style="object-fit: cover;" alt="">
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-md-4">
+                                                <!-- Template Card 2 - Letter Size -->
+                                                <div class="template-card border" 
+                                                    style="aspect-ratio: 8.5/11; width: 100%; border-radius: 16px; overflow: hidden;">
+                                                    <img src="images/template-9.png" class="w-100 h-100" style="object-fit: cover;" alt="">
+                                                </div>
+                                            </div>
+                                        </div>     
+                                    </div>
+                                    <!-- Elements Tab Content - Replace the empty elements-content tab-pane -->
+                                    <div class="tab-pane fade" id="elements-content" role="tabpanel" aria-labelledby="elements-tab">
+                                        <div class="elements-container">
+                                            <!-- Browse Categories Header -->
+                                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                                <h5 class="fw-semibold mb-0" style="color: #3D204E;">Browse Categories</h5>
+                                                <div class="d-flex gap-3">
+                                                    <a href="#" class="text-decoration-none small" style="color: #3D204E;">Recently Used</a>
+                                                    <a href="#" class="text-decoration-none small" style="color: #3D204E;">See All</a>
+                                                </div>
+                                            </div>
+
+                                            <!-- All Categories Section -->
+                                            <div class="mb-4">
+                                                <h6 class="fw-semibold mb-3" style="color: #3D204E; font-size: 1rem;">All Categories</h6>
+                                                <div class="row g-2">
+                                                    <!-- iRUTH GOLDEN SPIRIT -->
+                                                    <div class="col-4">
+                                                        <div class="element-card p-2 text-center" style="background: #f8f4fa; border-radius: 12px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="element-preview mb-2 d-flex align-items-center justify-content-center" style="height: 60px;">
+                                                                <i class="fa-solid fa-shapes fs-1" style="color: #D4AF37;"></i>
+                                                            </div>
+                                                            <span class="small fw-semibold" style="color: #3D204E; font-size: 0.7rem; line-height: 1.2; display: block;">Shapes</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- CHRISTIAN VISION BOARD CLIP ART BOOK -->
+                                                    <div class="col-4">
+                                                        <div class="element-card p-2 text-center" style="background: #f8f4fa; border-radius: 12px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="element-preview mb-2 d-flex align-items-center justify-content-center" style="height: 60px;">
+                                                                <i class="fa-solid fa-seedling fs-1" style="color: #3D204E;"></i>
+                                                            </div>
+                                                            <span class="small fw-semibold" style="color: #3D204E; font-size: 0.7rem; line-height: 1.2; display: block;">Graphics</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- HOLY BIBLE -->
+                                                    <div class="col-4">
+                                                        <div class="element-card p-2 text-center" style="background: #f8f4fa; border-radius: 12px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="element-preview mb-2 d-flex align-items-center justify-content-center" style="height: 60px;">
+                                                                <i class="fa-solid fa-image fs-1" style="color: #8B4513;"></i>
+                                                            </div>
+                                                            <span class="small fw-semibold" style="color: #3D204E; font-size: 0.7rem; line-height: 1.2; display: block;">Photos</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- welcome -->
+                                                    <div class="col-4">
+                                                        <div class="element-card p-2 text-center" style="background: #f8f4fa; border-radius: 12px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="element-preview mb-2 d-flex align-items-center justify-content-center" style="height: 60px;">
+                                                                <i class="fa-solid fa-crop-simple fs-1" style="color: #2E8B57;"></i>
+                                                            </div>
+                                                            <span class="small fw-semibold" style="color: #3D204E; font-size: 0.7rem; line-height: 1.2; display: block;">Frames</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- I am worthy -->
+                                                    <div class="col-4">
+                                                        <div class="element-card p-2 text-center" style="background: #f8f4fa; border-radius: 12px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="element-preview mb-2 d-flex align-items-center justify-content-center" style="height: 60px;">
+                                                                <i class="fa-solid fa-table-columns fs-1" style="color: #FF69B4;"></i>
+                                                            </div>
+                                                            <span class="small fw-semibold" style="color: #3D204E; font-size: 0.7rem; line-height: 1.2; display: block;">Grids</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- PALM SUNDAY -->
+                                                    <div class="col-4">
+                                                        <div class="element-card p-2 text-center" style="background: #f8f4fa; border-radius: 12px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="element-preview mb-2 d-flex align-items-center justify-content-center" style="height: 60px;">
+                                                                <i class="fa-solid fa-cubes fs-1" style="color: #228B22;"></i>
+                                                            </div>
+                                                            <span class="small fw-semibold" style="color: #3D204E; font-size: 0.7rem; line-height: 1.2; display: block;">3D</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Add Text Tab Content - Replace the empty addtext-content tab-pane -->
+                                    <div class="tab-pane fade" id="addtext-content" role="tabpanel" aria-labelledby="add-text-tab">
+                                        <div class="add-text-container">
+                                            <!-- Search Fonts -->
+                                            <div class="mb-4">
+                                                <h6 class="fw-semibold mb-3" style="color: #3D204E; font-size: 1rem;">Search Fonts And Combinations</h6>
+                                                <div class="search-box-mini d-flex align-items-center" style="border: 1px solid #ddd; border-radius: 30px; padding: 0.5rem 1rem; background: white;">
+                                                    <i class="fas fa-search text-secondary me-2" style="font-size: 0.9rem;"></i>
+                                                    <input type="text" placeholder="Search fonts..." class="bg-transparent w-100" style="border: none; outline: none; font-size: 0.9rem;">
+                                                </div>
+                                            </div>
+
+                                            <!-- Add A Text Box Button -->
+                                            <div class="mb-3">
+                                                <button class="btn w-100 py-3 rounded-pill fw-semibold d-flex align-items-center justify-content-center gap-2" style="background: #3D204E; color: #f3eff7;" onclick="addTextBox()">
+                                                    <i class="fas fa-plus-circle"></i>
+                                                    <span>Add A Text Box</span>
+                                                </button>
+                                            </div>
+
+                                            <!-- Font Combinations Section -->
+                                            <div class="mb-4">
+                                                <h6 class="fw-semibold mb-3" style="color: #3D204E; font-size: 1rem;">Default Text Styles</h6>
+                                                
+                                                <!-- Font Combination Grid -->
+                                                <div class="row g-2">
+                                                    <!-- Happy BIRTHDAY -->
+                                                    <div class="col-6">
+                                                        <div class="font-combo-card p-2" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease; border: 1px solid transparent;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="text-center">
+                                                                <div style="font-family: 'Abel', sans-serif; line-height: 1.2;">
+                                                                    <span style="font-size: 1.2rem; font-weight: 300; color: #3D204E;">Heading</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- quick WIN -->
+                                                    <div class="col-6">
+                                                        <div class="font-combo-card p-2" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease; border: 1px solid transparent;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="text-center">
+                                                                <div style="font-family: 'Abel', sans-serif; line-height: 1.2;">
+                                                                    <span style="font-size: 1.2rem; font-weight: 300; color: #3D204E;">Subheading</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- TECH STACK -->
+                                                    <div class="col-6">
+                                                        <div class="font-combo-card p-2" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease; border: 1px solid transparent;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="text-center">
+                                                                <div style="font-family: 'Abel', sans-serif; line-height: 1.2;">
+                                                                    <span style="font-size: 1.2rem; font-weight: 300; color: #3D204E;">Body</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Font Combinations Section -->
+                                            <div class="mb-4">
+                                                <h6 class="fw-semibold mb-3" style="color: #3D204E; font-size: 1rem;">Font Combination</h6>
+                                                
+                                                <!-- Font Combination Grid -->
+                                                <div class="row g-2">
+                                                    <!-- Happy BIRTHDAY -->
+                                                    <div class="col-6">
+                                                        <div class="font-combo-card p-2" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease; border: 1px solid transparent;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="text-center">
+                                                                <div style="font-family: 'Abel', sans-serif; line-height: 1.2;">
+                                                                    <span style="font-size: 1.2rem; font-weight: 300; color: #3D204E;">Happy</span>
+                                                                    <br>
+                                                                    <span style="font-size: 1.5rem; font-weight: 700; color: #3D204E; letter-spacing: 1px;">BIRTHDAY</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- quick WIN -->
+                                                    <div class="col-6">
+                                                        <div class="font-combo-card p-2" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease; border: 1px solid transparent;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="text-center">
+                                                                <div style="font-family: 'Abel', sans-serif; line-height: 1.2;">
+                                                                    <span style="font-size: 1.2rem; font-weight: 300; color: #3D204E;">quick</span>
+                                                                    <br>
+                                                                    <span style="font-size: 1.8rem; font-weight: 800; color: #3D204E; text-transform: uppercase;">WIN</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- TECH STACK -->
+                                                    <div class="col-6">
+                                                        <div class="font-combo-card p-2" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease; border: 1px solid transparent;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="text-center">
+                                                                <div style="font-family: 'Abel', sans-serif; line-height: 1.2;">
+                                                                    <span style="font-size: 1.8rem; font-weight: 700; color: #3D204E; letter-spacing: 2px;">TECH</span>
+                                                                    <br>
+                                                                    <span style="font-size: 1.2rem; font-weight: 300; color: #3D204E;">STACK</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- new PROJECT -->
+                                                    <div class="col-6">
+                                                        <div class="font-combo-card p-2" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease; border: 1px solid transparent;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="text-center">
+                                                                <div style="font-family: 'Abel', sans-serif; line-height: 1.2;">
+                                                                    <span style="font-size: 1.2rem; font-weight: 300; color: #3D204E;">new</span>
+                                                                    <br>
+                                                                    <span style="font-size: 1.8rem; font-weight: 700; color: #3D204E; text-transform: uppercase;">PROJECT</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Hoster BRAND -->
+                                                    <div class="col-6">
+                                                        <div class="font-combo-card p-2" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease; border: 1px solid transparent;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'">
+                                                            <div class="text-center">
+                                                                <div style="font-family: 'Abel', sans-serif; line-height: 1.2;">
+                                                                    <span style="font-size: 1.5rem; font-weight: 700; color: #3D204E;">Hoster</span>
+                                                                    <br>
+                                                                    <span style="font-size: 1.2rem; font-weight: 300; color: #3D204E;">BRAND</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Upload Tab Content - Replace the empty upload-content tab-pane -->
+                                    <div class="tab-pane fade" id="upload-content" role="tabpanel" aria-labelledby="upload-tab">
+                                        <div class="uploads-container">
+                                            <!-- Search Keywords, Tags, Color -->
+                                            <div class="mb-4">
+                                                <h6 class="fw-semibold mb-3" style="color: #3D204E; font-size: 1rem;">Search Keywords, Tags, Color</h6>
+                                                <div class="search-box-mini d-flex align-items-center" style="border: 1px solid #ddd; border-radius: 30px; padding: 0.5rem 1rem; background: white;">
+                                                    <i class="fas fa-search text-secondary me-2" style="font-size: 0.9rem;"></i>
+                                                    <input type="text" placeholder="Search uploads..." class="bg-transparent w-100" style="border: none; outline: none; font-size: 0.9rem;">
+                                                </div>
+                                            </div>
+
+                                            <!-- Upload Files Button -->
+                                            <div class="mb-4">
+                                                <button class="btn w-100 py-3 rounded-pill fw-semibold d-flex align-items-center justify-content-center gap-2" style="background: #3D204E; color: white; border: none;" onclick="uploadFiles()">
+                                                    <i class="fas fa-cloud-upload-alt"></i>
+                                                    <span>Upload Files</span>
+                                                </button>
+                                            </div>
+
+
+                                            <div class="mb-4">
+                                                <ul class="nav nav-tabs" id="uploadTab" role="tablist" style="border-bottom: 1px solid #dee2e6;">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="images-tab" data-bs-toggle="tab" data-bs-target="#images" type="button" role="tab" aria-controls="images" aria-selected="true" style="color: #3D204E; font-weight: 600; border: none; background: transparent;">
+                                                            Images
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="folders-tab" data-bs-toggle="tab" data-bs-target="#folders" type="button" role="tab" aria-controls="folders" aria-selected="false" style="color: #999; font-weight: 500; border: none; background: transparent;">
+                                                            Folders
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- Tab Content -->
+                                            <div class="tab-content py-2" id="uploadTabContent">
+                                                <!-- Images Tab Pane -->
+                                                <div class="tab-pane fade show active" id="images" role="tabpanel" aria-labelledby="images-tab">
+                                                    <div class="row">
+                                                        <div class="col-4 mb-3 p-3">
+                                                            <img src="images/template-1.png" class="w-100" alt="">
+                                                        </div>
+                                                        <div class="col-4 mb-3 p-3">
+                                                            <img src="images/template-2.png" class="w-100" alt="">
+                                                        </div>
+                                                        <div class="col-4 mb-3 p-3">
+                                                            <img src="images/template-3.png" class="w-100" alt="">
+                                                        </div>
+                                                        <div class="col-4 mb-3 p-3">
+                                                            <img src="images/template-4.png" class="w-100" alt="">
+                                                        </div>
+                                                        <div class="col-4 mb-3 p-3">
+                                                            <img src="images/template-5.png" class="w-100" alt="">
+                                                        </div>
+                                                        <div class="col-4 mb-3 p-3">
+                                                            <img src="images/template-6.png" class="w-100" alt="">
+                                                        </div>
+                                                        <div class="col-4 mb-3 p-3">
+                                                            <img src="images/template-7.png" class="w-100" alt="">
+                                                        </div>
+                                                        <div class="col-4 mb-3 p-3">
+                                                            <img src="images/template-8.png" class="w-100" alt="">
+                                                        </div>
+                                                        <div class="col-4 mb-3 p-3">
+                                                            <img src="images/template-9.png" class="w-100" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Folders Tab Pane -->
+                                                <div class="tab-pane fade" id="folders" role="tabpanel" aria-labelledby="folders-tab">
+                                                    <div class="upload-item-card mb-3 p-3 d-flex align-items-center gap-3" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateX(5px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateX(0)'">
+                                                        <div class="upload-item-preview d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background: #3D204E; border-radius: 12px; overflow: hidden;">
+                                                            <i class="fas fa-folder fs-1 text-white"></i>
+                                                        </div>
+                                                        <div class="upload-item-details flex-grow-1">
+                                                            <h6 class="fw-semibold mb-1" style="color: #3D204E; font-size: 1rem;">Crypto Graphics</h6>
+                                                            <p class="small text-muted mb-0" style="font-size: 0.85rem;">12 items</p>
+                                                        </div>
+                                                        <div class="upload-item-actions">
+                                                            <i class="fas fa-chevron-right text-secondary"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="upload-item-card mb-3 p-3 d-flex align-items-center gap-3" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateX(5px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateX(0)'">
+                                                        <div class="upload-item-preview d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background: #D4AF37; border-radius: 12px; overflow: hidden;">
+                                                            <i class="fas fa-folder fs-1 text-white"></i>
+                                                        </div>
+                                                        <div class="upload-item-details flex-grow-1">
+                                                            <h6 class="fw-semibold mb-1" style="color: #3D204E; font-size: 1rem;">Faith Based</h6>
+                                                            <p class="small text-muted mb-0" style="font-size: 0.85rem;">24 items</p>
+                                                        </div>
+                                                        <div class="upload-item-actions">
+                                                            <i class="fas fa-chevron-right text-secondary"></i>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="upload-item-card mb-3 p-3 d-flex align-items-center gap-3" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateX(5px)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateX(0)'">
+                                                        <div class="upload-item-preview d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background: #2E8B57; border-radius: 12px; overflow: hidden;">
+                                                            <i class="fas fa-folder fs-1 text-white"></i>
+                                                        </div>
+                                                        <div class="upload-item-details flex-grow-1">
+                                                            <h6 class="fw-semibold mb-1" style="color: #3D204E; font-size: 1rem;">Bible Verses</h6>
+                                                            <p class="small text-muted mb-0" style="font-size: 0.85rem;">8 items</p>
+                                                        </div>
+                                                        <div class="upload-item-actions">
+                                                            <i class="fas fa-chevron-right text-secondary"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Tools Tab Content - Replace the empty tools-content tab-pane -->
+                                    <div class="tab-pane fade" id="tools-content" role="tabpanel" aria-labelledby="tools-tab">
+                                        <div class="tools-container">
+                                            <!-- Tools Header -->
+                                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                                <h5 class="fw-semibold mb-0" style="color: #3D204E;">Tools</h5>
+                                                <a href="#" class="text-decoration-none small" style="color: #3D204E;">See All</a>
+                                            </div>
+
+                                            <!-- Tools Grid -->
+                                            <div class="row g-3">
+                                                <!-- Crop Tool -->
+                                                <div class="col-6">
+                                                    <div class="tool-card p-3 text-center" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(61,32,78,0.15)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                                        <div class="tool-icon mb-2 d-flex align-items-center justify-content-center" style="width: 100%; height: 80px;">
+                                                            <i class="fas fa-crop-alt fs-1" style="color: #3D204E;"></i>
+                                                        </div>
+                                                        <span class="fw-semibold" style="color: #3D204E; font-size: 1rem;">Crop</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Resize Tool -->
+                                                <div class="col-6">
+                                                    <div class="tool-card p-3 text-center" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(61,32,78,0.15)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                                        <div class="tool-icon mb-2 d-flex align-items-center justify-content-center" style="width: 100%; height: 80px;">
+                                                            <i class="fas fa-expand-alt fs-1" style="color: #3D204E;"></i>
+                                                        </div>
+                                                        <span class="fw-semibold" style="color: #3D204E; font-size: 1rem;">Resize</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Rotate Tool -->
+                                                <div class="col-6">
+                                                    <div class="tool-card p-3 text-center" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(61,32,78,0.15)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                                        <div class="tool-icon mb-2 d-flex align-items-center justify-content-center" style="width: 100%; height: 80px;">
+                                                            <i class="fas fa-undo-alt fs-1" style="color: #3D204E;"></i>
+                                                        </div>
+                                                        <span class="fw-semibold" style="color: #3D204E; font-size: 1rem;">Rotate</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Flip Tool -->
+                                                <div class="col-6">
+                                                    <div class="tool-card p-3 text-center" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(61,32,78,0.15)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                                        <div class="tool-icon mb-2 d-flex align-items-center justify-content-center" style="width: 100%; height: 80px;">
+                                                            <i class="fas fa-arrows-alt-h fs-1" style="color: #3D204E;"></i>
+                                                        </div>
+                                                        <span class="fw-semibold" style="color: #3D204E; font-size: 1rem;">Flip</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Adjust Colors Tool -->
+                                                <div class="col-6">
+                                                    <div class="tool-card p-3 text-center" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(61,32,78,0.15)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                                        <div class="tool-icon mb-2 d-flex align-items-center justify-content-center" style="width: 100%; height: 80px;">
+                                                            <i class="fas fa-palette fs-1" style="color: #3D204E;"></i>
+                                                        </div>
+                                                        <span class="fw-semibold" style="color: #3D204E; font-size: 1rem;">Adjust Colors</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Filters Tool -->
+                                                <div class="col-6">
+                                                    <div class="tool-card p-3 text-center" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(61,32,78,0.15)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                                        <div class="tool-icon mb-2 d-flex align-items-center justify-content-center" style="width: 100%; height: 80px;">
+                                                            <i class="fas fa-filter fs-1" style="color: #3D204E;"></i>
+                                                        </div>
+                                                        <span class="fw-semibold" style="color: #3D204E; font-size: 1rem;">Filters</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Layers Tool -->
+                                                <div class="col-6">
+                                                    <div class="tool-card p-3 text-center" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(61,32,78,0.15)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                                        <div class="tool-icon mb-2 d-flex align-items-center justify-content-center" style="width: 100%; height: 80px;">
+                                                            <i class="fas fa-layer-group fs-1" style="color: #3D204E;"></i>
+                                                        </div>
+                                                        <span class="fw-semibold" style="color: #3D204E; font-size: 1rem;">Layers</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Opacity Tool -->
+                                                <div class="col-6">
+                                                    <div class="tool-card p-3 text-center" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(61,32,78,0.15)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                                        <div class="tool-icon mb-2 d-flex align-items-center justify-content-center" style="width: 100%; height: 80px;">
+                                                            <i class="fas fa-circle fs-1" style="color: #3D204E;"></i>
+                                                        </div>
+                                                        <span class="fw-semibold" style="color: #3D204E; font-size: 1rem;">Opacity</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Blur Tool -->
+                                                <div class="col-6">
+                                                    <div class="tool-card p-3 text-center" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(61,32,78,0.15)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                                        <div class="tool-icon mb-2 d-flex align-items-center justify-content-center" style="width: 100%; height: 80px;">
+                                                            <i class="fas fa-tint fs-1" style="color: #3D204E;"></i>
+                                                        </div>
+                                                        <span class="fw-semibold" style="color: #3D204E; font-size: 1rem;">Blur</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Sharpen Tool -->
+                                                <div class="col-6">
+                                                    <div class="tool-card p-3 text-center" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(61,32,78,0.15)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                                        <div class="tool-icon mb-2 d-flex align-items-center justify-content-center" style="width: 100%; height: 80px;">
+                                                            <i class="fas fa-eye fs-1" style="color: #3D204E;"></i>
+                                                        </div>
+                                                        <span class="fw-semibold" style="color: #3D204E; font-size: 1rem;">Sharpen</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Background Remover Tool -->
+                                                <div class="col-6">
+                                                    <div class="tool-card p-3 text-center" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(61,32,78,0.15)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                                        <div class="tool-icon mb-2 d-flex align-items-center justify-content-center" style="width: 100%; height: 80px;">
+                                                            <i class="fas fa-eraser fs-1" style="color: #3D204E;"></i>
+                                                        </div>
+                                                        <span class="fw-semibold" style="color: #3D204E; font-size: 1rem;">Remove BG</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Text Tool -->
+                                                <div class="col-6">
+                                                    <div class="tool-card p-3 text-center" style="background: #f8f4fa; border-radius: 16px; cursor: pointer; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'; this.style.transform='translateY(-4px)'; this.style.boxShadow='0 6px 16px rgba(61,32,78,0.15)'" onmouseout="this.style.background='#f8f4fa'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                                        <div class="tool-icon mb-2 d-flex align-items-center justify-content-center" style="width: 100%; height: 80px;">
+                                                            <i class="fas fa-font fs-1" style="color: #3D204E;"></i>
+                                                        </div>
+                                                        <span class="fw-semibold" style="color: #3D204E; font-size: 1rem;">Text</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Recent Tools Section -->
+                                            <div class="mt-4">
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <h6 class="fw-semibold mb-0" style="color: #3D204E; font-size: 0.95rem;">Recently Used</h6>
+                                                    <a href="#" class="text-decoration-none small" style="color: #3D204E;">Clear</a>
+                                                </div>
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <span class="recent-tool-chip px-3 py-2 rounded-pill" style="background: #f8f4fa; color: #3D204E; cursor: pointer; font-size: 0.85rem; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'" onmouseout="this.style.background='#f8f4fa'">
+                                                        <i class="fas fa-crop-alt me-1"></i> Crop
+                                                    </span>
+                                                    <span class="recent-tool-chip px-3 py-2 rounded-pill" style="background: #f8f4fa; color: #3D204E; cursor: pointer; font-size: 0.85rem; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'" onmouseout="this.style.background='#f8f4fa'">
+                                                        <i class="fas fa-filter me-1"></i> Filters
+                                                    </span>
+                                                    <span class="recent-tool-chip px-3 py-2 rounded-pill" style="background: #f8f4fa; color: #3D204E; cursor: pointer; font-size: 0.85rem; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'" onmouseout="this.style.background='#f8f4fa'">
+                                                        <i class="fas fa-eraser me-1"></i> Remove BG
+                                                    </span>
+                                                    <span class="recent-tool-chip px-3 py-2 rounded-pill" style="background: #f8f4fa; color: #3D204E; cursor: pointer; font-size: 0.85rem; transition: all 0.2s ease;" onmouseover="this.style.background='#ede4f3'" onmouseout="this.style.background='#f8f4fa'">
+                                                        <i class="fas fa-font me-1"></i> Text
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Bible Tab Content - Replace the empty bible-content tab-pane -->
+                                    <div class="tab-pane fade" id="bible-content" role="tabpanel" aria-labelledby="bible-tab">
+                                        <div class="bible-container">
+                                            <!-- Bible Header with Book Selection -->
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h5 class="fw-semibold mb-0" style="color: #3D204E;">Bible</h5>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" style="background: #f3eff7; color: #3D204E; border: none; border-radius: 30px; padding: 0.3rem 1rem;">
+                                                        Genesis
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-end" style="max-height: 300px; overflow-y: auto;">
+                                                        <li><a class="dropdown-item" href="#">Genesis</a></li>
+                                                        <li><a class="dropdown-item" href="#">Exodus</a></li>
+                                                        <li><a class="dropdown-item" href="#">Leviticus</a></li>
+                                                        <li><a class="dropdown-item" href="#">Numbers</a></li>
+                                                        <li><a class="dropdown-item" href="#">Deuteronomy</a></li>
+                                                        <li><a class="dropdown-item" href="#">Joshua</a></li>
+                                                        <li><a class="dropdown-item" href="#">Judges</a></li>
+                                                        <li><a class="dropdown-item" href="#">Ruth</a></li>
+                                                        <li><a class="dropdown-item" href="#">1 Samuel</a></li>
+                                                        <li><a class="dropdown-item" href="#">2 Samuel</a></li>
+                                                        <li><a class="dropdown-item" href="#">1 Kings</a></li>
+                                                        <li><a class="dropdown-item" href="#">2 Kings</a></li>
+                                                        <li><a class="dropdown-item" href="#">1 Chronicles</a></li>
+                                                        <li><a class="dropdown-item" href="#">2 Chronicles</a></li>
+                                                        <li><a class="dropdown-item" href="#">Ezra</a></li>
+                                                        <li><a class="dropdown-item" href="#">Nehemiah</a></li>
+                                                        <li><a class="dropdown-item" href="#">Esther</a></li>
+                                                        <li><a class="dropdown-item" href="#">Job</a></li>
+                                                        <li><a class="dropdown-item" href="#">Psalms</a></li>
+                                                        <li><a class="dropdown-item" href="#">Proverbs</a></li>
+                                                        <li><a class="dropdown-item" href="#">Ecclesiastes</a></li>
+                                                        <li><a class="dropdown-item" href="#">Song of Solomon</a></li>
+                                                        <li><a class="dropdown-item" href="#">Isaiah</a></li>
+                                                        <li><a class="dropdown-item" href="#">Jeremiah</a></li>
+                                                        <li><a class="dropdown-item" href="#">Lamentations</a></li>
+                                                        <li><a class="dropdown-item" href="#">Ezekiel</a></li>
+                                                        <li><a class="dropdown-item" href="#">Daniel</a></li>
+                                                        <li><a class="dropdown-item" href="#">Hosea</a></li>
+                                                        <li><a class="dropdown-item" href="#">Joel</a></li>
+                                                        <li><a class="dropdown-item" href="#">Amos</a></li>
+                                                        <li><a class="dropdown-item" href="#">Obadiah</a></li>
+                                                        <li><a class="dropdown-item" href="#">Jonah</a></li>
+                                                        <li><a class="dropdown-item" href="#">Micah</a></li>
+                                                        <li><a class="dropdown-item" href="#">Nahum</a></li>
+                                                        <li><a class="dropdown-item" href="#">Habakkuk</a></li>
+                                                        <li><a class="dropdown-item" href="#">Zephaniah</a></li>
+                                                        <li><a class="dropdown-item" href="#">Haggai</a></li>
+                                                        <li><a class="dropdown-item" href="#">Zechariah</a></li>
+                                                        <li><a class="dropdown-item" href="#">Malachi</a></li>
+                                                        <li><a class="dropdown-item" href="#">Matthew</a></li>
+                                                        <li><a class="dropdown-item" href="#">Mark</a></li>
+                                                        <li><a class="dropdown-item" href="#">Luke</a></li>
+                                                        <li><a class="dropdown-item" href="#">John</a></li>
+                                                        <li><a class="dropdown-item" href="#">Acts</a></li>
+                                                        <li><a class="dropdown-item" href="#">Romans</a></li>
+                                                        <li><a class="dropdown-item" href="#">1 Corinthians</a></li>
+                                                        <li><a class="dropdown-item" href="#">2 Corinthians</a></li>
+                                                        <li><a class="dropdown-item" href="#">Galatians</a></li>
+                                                        <li><a class="dropdown-item" href="#">Ephesians</a></li>
+                                                        <li><a class="dropdown-item" href="#">Philippians</a></li>
+                                                        <li><a class="dropdown-item" href="#">Colossians</a></li>
+                                                        <li><a class="dropdown-item" href="#">1 Thessalonians</a></li>
+                                                        <li><a class="dropdown-item" href="#">2 Thessalonians</a></li>
+                                                        <li><a class="dropdown-item" href="#">1 Timothy</a></li>
+                                                        <li><a class="dropdown-item" href="#">2 Timothy</a></li>
+                                                        <li><a class="dropdown-item" href="#">Titus</a></li>
+                                                        <li><a class="dropdown-item" href="#">Philemon</a></li>
+                                                        <li><a class="dropdown-item" href="#">Hebrews</a></li>
+                                                        <li><a class="dropdown-item" href="#">James</a></li>
+                                                        <li><a class="dropdown-item" href="#">1 Peter</a></li>
+                                                        <li><a class="dropdown-item" href="#">2 Peter</a></li>
+                                                        <li><a class="dropdown-item" href="#">1 John</a></li>
+                                                        <li><a class="dropdown-item" href="#">2 John</a></li>
+                                                        <li><a class="dropdown-item" href="#">3 John</a></li>
+                                                        <li><a class="dropdown-item" href="#">Jude</a></li>
+                                                        <li><a class="dropdown-item" href="#">Revelation</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- Chapter Navigation -->
+                                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                                <button class="btn btn-sm d-flex align-items-center gap-1" style="background: #f3eff7; color: #3D204E; border: none; border-radius: 30px; padding: 0.3rem 1rem;" onclick="previousChapter()">
+                                                    <i class="fas fa-chevron-left"></i> Prev
+                                                </button>
+                                                <span class="fw-semibold" style="color: #3D204E;">Chapter 1</span>
+                                                <button class="btn btn-sm d-flex align-items-center gap-1" style="background: #f3eff7; color: #3D204E; border: none; border-radius: 30px; padding: 0.3rem 1rem;" onclick="nextChapter()">
+                                                    Next <i class="fas fa-chevron-right"></i>
+                                                </button>
+                                            </div>
+
+                                            <!-- Bible Content -->
+                                            <div class="bible-content p-3" style="background: #f8f4fa; border-radius: 20px; max-height: 400px; overflow-y: auto;">
+                                                <!-- GENESIS 1 - Main Title -->
+                                                <h1 class="text-center fw-bold mb-2" style="color: #3D204E; font-size: 2.5rem; letter-spacing: 2px;">GENESIS 1</h1>
+                                                
+                                                <!-- GENESIS Subtitle -->
+                                                <h2 class="text-center fw-semibold mb-3" style="color: #3D204E; font-size: 1.5rem;">GENESIS</h2>
+                                                
+                                                <!-- The Creation of the World - Subheading -->
+                                                <h3 class="fw-semibold mb-3" style="color: #3D204E; font-size: 1.2rem;">The Creation of the World</h3>
+                                                
+                                                <!-- Bible Verses -->
+                                                <div class="bible-verses">
+                                                    <p class="mb-2" style="color: #333; line-height: 1.7;">
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">1</span> In the beginning, God created the heavens and the earth. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">2</span> The earth was without form and void, and darkness was over the face of the deep. And the Spirit of God was hovering over the face of the waters.
+                                                    </p>
+                                                    
+                                                    <p class="mb-2" style="color: #333; line-height: 1.7;">
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">3</span> And God said, “Let there be light,” and there was light. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">4</span> And God saw that the light was good. And God separated the light from the darkness. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">5</span> God called the light Day, and the darkness he called Night. And there was evening and there was morning, the first day.
+                                                    </p>
+                                                    
+                                                    <p class="mb-2" style="color: #333; line-height: 1.7;">
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">6</span> And God said, “Let there be an expanse in the midst of the waters, and let it separate the waters from the waters.” 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">7</span> And God made the expanse and separated the waters that were under the expanse from the waters that were above the expanse. And it was so. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">8</span> And God called the expanse Heaven. And there was evening and there was morning, the second day.
+                                                    </p>
+                                                    
+                                                    <p class="mb-2" style="color: #333; line-height: 1.7;">
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">9</span> And God said, “Let the waters under the heavens be gathered together into one place, and let the dry land appear.” And it was so. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">10</span> God called the dry land Earth, and the waters that were gathered together he called Seas. And God saw that it was good.
+                                                    </p>
+                                                    
+                                                    <p class="mb-2" style="color: #333; line-height: 1.7;">
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">11</span> And God said, “Let the earth sprout vegetation, plants yielding seed, and fruit trees bearing fruit in which is their seed, each according to its kind, on the earth.” And it was so. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">12</span> The earth brought forth vegetation, plants yielding seed according to their own kinds, and trees bearing fruit in which is their seed, each according to its kind. And God saw that it was good. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">13</span> And there was evening and there was morning, the third day.
+                                                    </p>
+                                                    
+                                                    <p class="mb-2" style="color: #333; line-height: 1.7;">
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">14</span> And God said, “Let there be lights in the expanse of the heavens to separate the day from the night. And let them be for signs and for seasons, and for days and years, 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">15</span> and let them be lights in the expanse of the heavens to give light upon the earth.” And it was so. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">16</span> And God made the two great lights—the greater light to rule the day and the lesser light to rule the night—and the stars. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">17</span> And God set them in the expanse of the heavens to give light on the earth, 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">18</span> to rule over the day and over the night, and to separate the light from the darkness. And God saw that it was good. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">19</span> And there was evening and there was morning, the fourth day.
+                                                    </p>
+                                                    
+                                                    <p class="mb-2" style="color: #333; line-height: 1.7;">
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">20</span> And God said, “Let the waters swarm with swarms of living creatures, and let birds fly above the earth across the expanse of the heavens.” 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">21</span> So God created the great sea creatures and every living creature that moves, with which the waters swarm, according to their kinds, and every winged bird according to its kind. And God saw that it was good. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">22</span> And God blessed them, saying, “Be fruitful and multiply and fill the waters in the seas, and let birds multiply on the earth.” 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">23</span> And there was evening and there was morning, the fifth day.
+                                                    </p>
+                                                    
+                                                    <p class="mb-2" style="color: #333; line-height: 1.7;">
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">24</span> And God said, “Let the earth bring forth living creatures according to their kinds—livestock and creeping things and beasts of the earth according to their kinds.” And it was so. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">25</span> And God made the beasts of the earth according to their kinds and the livestock according to their kinds, and everything that creeps on the ground according to its kind. And God saw that it was good.
+                                                    </p>
+                                                    
+                                                    <p class="mb-2" style="color: #333; line-height: 1.7;">
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">26</span> Then God said, “Let us make man in our image, after our likeness. And let them have dominion over the fish of the sea and over the birds of the heavens and over the livestock and over all the earth and over every creeping thing that creeps on the earth.”
+                                                    </p>
+                                                    
+                                                    <p class="mb-2" style="color: #333; line-height: 1.7;">
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">27</span> So God created man in his own image, in the image of God he created him; male and female he created them.
+                                                    </p>
+                                                    
+                                                    <p class="mb-2" style="color: #333; line-height: 1.7;">
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">28</span> And God blessed them. And God said to them, “Be fruitful and multiply and fill the earth and subdue it, and have dominion over the fish of the sea and over the birds of the heavens and over every living thing that moves on the earth.” 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">29</span> And God said, “Behold, I have given you every plant yielding seed that is on the face of all the earth, and every tree with seed in its fruit. You shall have them for food. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">30</span> And to every beast of the earth and to every bird of the heavens and to everything that creeps on the earth, everything that has the breath of life, I have given every green plant for food.” And it was so. 
+                                                        <span class="verse-number fw-bold me-1" style="color: #3D204E;">31</span> And God saw everything that he had made, and behold, it was very good. And there was evening and there was morning, the sixth day.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Action Buttons -->
+                                            <div class="d-flex gap-2 mt-3">
+                                                <button class="btn flex-grow-1 py-2 rounded-pill d-flex align-items-center justify-content-center gap-2" style="background: #3D204E; color: white; border: none;" onclick="addToDesign()">
+                                                    <i class="fas fa-plus-circle"></i>
+                                                    <span>Add to Design</span>
+                                                </button>
+                                                <button class="btn flex-grow-1 py-2 rounded-pill d-flex align-items-center justify-content-center gap-2" style="background: transparent; border: 2px solid #3D204E; color: #3D204E;" onclick="copyVerse()">
+                                                    <i class="fas fa-copy"></i>
+                                                    <span>Copy</span>
+                                                </button>
+                                            </div>
+
+                                            <!-- Chapter Selection -->
+                                            <div class="chapter-grid mt-3 p-2" style="background: #f8f4fa; border-radius: 16px;">
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <span class="small fw-semibold" style="color: #3D204E;">Quick Chapters</span>
+                                                    <span class="small text-muted">Genesis</span>
+                                                </div>
+                                                <div class="d-flex flex-wrap gap-1">
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(1)">1</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(2)">2</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(3)">3</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(4)">4</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(5)">5</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(6)">6</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(7)">7</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(8)">8</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(9)">9</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(10)">10</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(11)">11</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(12)">12</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(13)">13</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(14)">14</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(15)">15</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(16)">16</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(17)">17</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(18)">18</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(19)">19</button>
+                                                    <button class="btn btn-sm chapter-btn" style="width: 35px; height: 35px; background: white; color: #3D204E; border: 1px solid #ddd; border-radius: 8px;" onclick="selectChapter(20)">20</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Image Area - Main Product Display - fixed height -->
+                            <div class="main-image-area" style="background: #EEEEEE; padding: 16px; width: 55%; height: 600px; position: relative; overflow: hidden;">
+                                <div class="d-flex flex-column h-100">
+                                    <!-- Centered image that takes all space - unaffected by buttons -->
+                                    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+                                        <img src="images/template-1.png" alt="White Glossy Mug" class="img-fluid" style="max-width: 80%; max-height: 95%; object-fit: contain;" onerror="this.src='https://placehold.co/400x400/3D204E/white?text=Mug'">
+                                    </div>
+                                    <div class="col-12 text-center mt-5">
+                                        <a href="#products" class="btn px-5 py-2 rounded-pill text-white fs-5" style="background: #3D204E; display: inline-block;">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram-products py-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <h2 class="display-6 fw-bold mb-4" style="color: #3D204E;">Check Out Our Products On Instagram</h2>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-5">
+                    <div class="col-6 col-md-3">
+                        <div class="position-relative overflow-hidden rounded-4 shadow-sm hover-effect" style="aspect-ratio: 1/1;">
+                            <img src="images/instagram-product-1.png" alt="Product 1" class="w-100 h-100 object-fit-cover">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 overlay" style="background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%);"></div>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <i class="bi bi-instagram text-white fs-2 p-3 rounded-circle d-inline-flex align-items-center justify-content-center" style="background-color: rgba(0,0,0,0.5); width: 60px; height: 60px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="position-relative overflow-hidden rounded-4 shadow-sm hover-effect" style="aspect-ratio: 1/1;">
+                            <img src="images/instagram-product-2.png" alt="Product 2" class="w-100 h-100 object-fit-cover">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 overlay" style="background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%);"></div>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <i class="bi bi-instagram text-white fs-2 p-3 rounded-circle d-inline-flex align-items-center justify-content-center" style="background-color: rgba(0,0,0,0.5); width: 60px; height: 60px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="position-relative overflow-hidden rounded-4 shadow-sm hover-effect" style="aspect-ratio: 1/1;">
+                            <img src="images/instagram-product-3.png" alt="Product 3" class="w-100 h-100 object-fit-cover">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 overlay" style="background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%);"></div>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <i class="bi bi-instagram text-white fs-2 p-3 rounded-circle d-inline-flex align-items-center justify-content-center" style="background-color: rgba(0,0,0,0.5); width: 60px; height: 60px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="position-relative overflow-hidden rounded-4 shadow-sm hover-effect" style="aspect-ratio: 1/1;">
+                            <img src="images/instagram-product-4.png" alt="Product 4" class="w-100 h-100 object-fit-cover">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 overlay" style="background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 100%);"></div>
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <i class="bi bi-instagram text-white fs-2 p-3 rounded-circle d-inline-flex align-items-center justify-content-center" style="background-color: rgba(0,0,0,0.5); width: 60px; height: 60px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer pt-5 pb-4">
+            <div class="container mb-5">
+                <div class="row mb-4 align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="display-4 fw-bold mb-4" style="color: #3D204E;">Faith Meets Creativity - Customize Your Journey.</h2>
+                        <span class="fs-5">Customized creations to inspire your daily walk with faith.</span>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                        <a href="#products" class="btn px-5 py-3 rounded-pill text-white fs-5" style="background: #3D204E;">Start Your Journey</a>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="container">
+                <!-- Main footer content -->
+                <div class="row gy-5">
+                    <!-- Logo/Brand Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" alt="The Blessed Manifest Logo">
+                        </a>
+                        <p class="fs-5 mt-3">Faith driven products made by you with love and purpose</p>
+                    </div>
+
+                    <!-- Quick Menu -->
+                    <div class="col-lg-3 col-md-6 footer-menus">
+                        <h6 class="fw-semibold mb-3">Quick Menu</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">About Us</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Products</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Blogs</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">FAQs</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company Policies -->
+                    <div class="col-lg-3 col-md-6 footer-menus">
+                        <h6 class="fw-semibold mb-3">Company Policies</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Terms and Conditions</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Exchange & Refund Policy</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Privacy Policy</a></li>
+                            <li class="mb-2"><a href="#" class="text-black text-decoration-none">Shipping policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-menus text-lg-end">
+                        <div class="mb-4">
+                            <h6 class="fw-semibold mb-3">Shop The Following Countries.</h6>
+                            <div class="d-flex justify-content-lg-end">
+                                <div class="dropdown w-100" style="max-width: 250px;">
+                                    <button class="btn btn-outline-dark dropdown-toggle rounded-0 px-4 py-2 w-100 text-start" type="button" data-bs-toggle="dropdown">
+                                        United States (USD $)
+                                    </button>
+                                    <ul class="dropdown-menu w-100 dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">United States (USD $)</a></li>
+                                        <li><a class="dropdown-item" href="#">Canada (CAD $)</a></li>
+                                        <li><a class="dropdown-item" href="#">United Kingdom (GBP £)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="pe-lg-4">
+                            <div class="d-flex gap-3">
+                                <a href="#products" class="btn px-4 py-3 rounded-pill text-white fs-6 fw-semibold w-50" style="background: #3D204E;">
+                                    <i class="fas fa-envelope me-2"></i>Get Inspired Today
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <img src="images/cards.png" alt="Payment methods" class="w-50 img-fluid">
+                    </div>
+                </div>
+
+                <hr class="border-light opacity-25 my-4">
+
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <span>Copyright © 2026 The Blessed Manifest. All Rights Reserved.</span>
+                    <div class="d-flex align-items-center gap-3">
+                        <span>Connect With Us</span>
+                        <a href="#" class="icon-circle d-flex align-items-center justify-content-center" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="icon-circle d-flex align-items-center justify-content-center" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="icon-circle d-flex align-items-center justify-content-center" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/designer-app-customize-template.js"></script>
+    </body>
+</html>
