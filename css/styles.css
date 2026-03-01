@@ -81,6 +81,34 @@ a:hover {
     background-repeat: no-repeat;
 }
 
+.contact-section {
+    background: url('../images/mission-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thank-you-section {
+    background: url('../images/mission-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-section {
+    background: url('../images/mission-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.registration-section {
+    background: url('../images/mission-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .post-card {
     position: relative;
     background-size: cover;
@@ -1385,6 +1413,160 @@ a:hover {
     .related-template-img img {
         width: 60px;
     }
+}
+
+.back-button {
+    color: #3D204E;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 2rem;
+    transition: all 0.2s;
+}
+.back-button:hover {
+    color: #2f173d;
+    gap: 12px;
+}
+.back-button i {
+    font-size: 1.2rem;
+}
+
+.cart-table th, .cart-table td { vertical-align: middle; }
+.product-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    overflow: hidden;
+}
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.product-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+.product-title {
+    font-weight: 600;
+    color: #3D204E;
+    margin-bottom: 4px;
+}
+.product-sku {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.qty-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: white;
+    font-weight: bold;
+    color: #3D204E;
+    transition: 0.2s;
+}
+.qty-btn:hover { background: #3D204E; color: white; border-color: #3D204E; }
+.qty-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    margin: 0 5px;
+    padding: 4px 0;
+}
+.coupon-input { border-radius: 30px 0 0 30px; border: 1px solid #3D204E; border-right: none; }
+.coupon-btn { border-radius: 0 30px 30px 0; background: #3D204E; color: white; border: 1px solid #3D204E; padding: 0 25px; font-weight: 500; }
+.coupon-btn:hover { background: #2f173d; }
+.update-cart { border-radius: 30px; border: 1px solid #3D204E; background: transparent; color: #3D204E; padding: 10px 32px; font-weight: 600; }
+.update-cart:hover { background: #3D204E; color: white; }
+.totals-card { background: #F9F7FA; border-radius: 24px; padding: 2rem; }
+.totals-line { display: flex; justify-content: space-between; margin-bottom: 1rem; font-size: 1.2rem; }
+.grand-total { font-size: 1.8rem; font-weight: 700; color: #3D204E; border-top: 2px dashed #c0b0ca; padding-top: 1rem; }
+.checkout-btn { background: #3D204E; color: white; border-radius: 40px; padding: 14px; font-weight: 600; font-size: 1.3rem; width: 100%; }
+.checkout-btn:hover { background: #2f173d; }
+@media (max-width: 767px) {
+    .cart-table thead { display: none; }
+    .cart-table tr { display: block; margin-bottom: 2rem; border: 1px solid #eee; border-radius: 20px; padding: 1rem; }
+    .cart-table td { display: flex; justify-content: space-between; align-items: center; border: none; padding: 0.5rem 0; }
+    .cart-table td:before { content: attr(data-label); font-weight: 600; width: 40%; color: #3D204E; }
+    .product-image { width: 50px; height: 50px; }
+}
+
+.section-title {
+    color: #3D204E; font-weight: 600; margin-bottom: 1.5rem; font-size: 1.6rem;
+}
+.form-label { font-weight: 500; color: #2d2d2d; margin-bottom: 0.3rem; }
+.required-star { color: #c44; margin-left: 2px; }
+.form-control, .form-select {
+    border-radius: 14px; border: 1px solid #d9cde0; padding: 0.7rem 1rem;
+    background-color: white; box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+.form-control:focus, .form-select:focus {
+    border-color: #3D204E; box-shadow: 0 0 0 0.2rem rgba(61,32,78,0.15);
+}
+.order-summary-card {
+    background: #F9F7FA; border-radius: 28px; padding: 2rem 1.8rem;
+    border: 1px solid #efe5f2;
+}
+.summary-item {
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px dashed #cdc0d3; padding: 0.8rem 0;
+}
+.summary-item:last-of-type { border-bottom: none; }
+.product-title-sm { font-weight: 500; color: #2c2c2c; }
+.delivery-badge {
+    background: #eaddf0; color: #3D204E; border-radius: 40px;
+    padding: 0.4rem 1.2rem; font-size: 0.9rem; display: inline-block;
+}
+.payment-method-card {
+    border: 2px solid #e2d5e9; border-radius: 22px; padding: 1.5rem;
+    background: white; transition: 0.15s; cursor: pointer;
+}
+.payment-method-card.active {
+    border-color: #3D204E; background: #f5edfa;
+}
+.card-row {
+    display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;
+}
+.card-expiry { width: 100px; }
+.card-security { width: 90px; }
+.card-zip { width: 120px; }
+.place-order-btn {
+    background: #3D204E; color: white; border-radius: 60px;
+    padding: 1rem 2rem; font-size: 1.6rem; font-weight: 600;
+    border: none; width: 100%; transition: 0.2s;
+}
+.place-order-btn:hover { background: #2f173d; }
+.terms-text { font-size: 0.95rem; color: #555; }
+.paypal-section {
+    background: #f4eff7; border-radius: 24px; padding: 1.5rem;
+    border: 1px solid #dccfe4;
+}
+.paypal-btn {
+    background: #003087; color: white; border-radius: 40px;
+    padding: 0.8rem 2rem; font-weight: 500; border: none;
+}
+.paypal-btn:hover { background: #00256b; }
+
+@media (max-width: 767px) {
+    .card-row { flex-direction: column; align-items: flex-start; }
+    .card-expiry, .card-security, .card-zip { width: 100%; }
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
